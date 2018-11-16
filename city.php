@@ -29,13 +29,11 @@
  		//$newValue = substr($valSelect, 0,-1);
  		echo"$valSelect"; echo"<br>";
  		echo"$newValue";
- 		
+
  	?>	
  	<table border="1">
  		<td bgcolor="Aquamarine">Cities</td>
  		<td bgcolor="Aquamarine">Country</td>
- 		<td bgcolor="Aquamarine">Flag</td>
-
  		<?php
  			while ($registro=mysqli_fetch_assoc($resultado)) {
  				echo"\t<tr>\n";

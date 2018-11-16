@@ -26,7 +26,7 @@
  		while( $registre = mysqli_fetch_assoc($resultat) )
  		{
  			$nomImg = $registre["Name"].".png";
- 			echo"<input type='radio' value='".$registre["Code"]."'>".$registre["Name"]."  ";echo"<img src='img/$nomImg'/>";
+ 			echo"<input type='radio' name ='paises' value='".$registre["Code"]."'>".$registre["Name"]."  ";echo"<img src='img/$nomImg'/>";
  		}
  		echo"</div>";
 		?>
