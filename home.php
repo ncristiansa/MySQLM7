@@ -25,7 +25,8 @@
  		echo"<div align='center'>";
  		while( $registre = mysqli_fetch_assoc($resultat) )
  		{
- 			echo"<input type='radio' value='".$registre["Code"]."'>".$registre["Name"]."  ";echo"<img src='img2/'".$registre["Name"]."'.png/>";
+ 			$nomImg = $registre["Name"].".png";
+ 			echo"<input type='radio' value='".$registre["Code"]."'>".$registre["Name"]."  ";echo"<img src='img/$nomImg'/>";
  		}
  		echo"</div>";
 		?>
